@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,45 +11,137 @@ using System.Windows.Forms;
 
 namespace Projetoteste
 {
-    public partial class Formteste : Form
+    public partial class MeuPrograma : Form
     {
-        int valor1;
+        double valor1;
         //valor da 1 pacela
 
-        int valor2;
+        double valor2;
         // valor da 2 pacela 
 
-        int res;
+        double res = 0;
         //resultado da pacelas
 
 
-        public Formteste()
+        public MeuPrograma()
         {
             InitializeComponent();
         }
 
+
+
         private void btnok_Click(object sender, EventArgs e)
         {
-            valor1 = int.Parse(pacela1.Text);
-            //converte o valor1  texto em numero inteiro.
-            valor2 = int.Parse(pacela2.Text);
-            // + , - , * , / , %
 
 
-            // 10/2=5
-            // 10%2=0 operador e oq sobra na divisao.
-            // 10%3=1
-            // 15%3=1
 
-            res = valor1 + valor2;
-            // resultado recebe o valor1 + o valor2.
-           
+                menssagemDeErro.Text = String.Empty;
 
-            resultado.Text = Convert.ToString(res);
-            // converte o texto em string ( caracteres ) no campo resultaado.
+            
 
 
             
+
+                valor1 = double.Parse(pacela1.Text);
+
+                valor2 = double.Parse(pacela2.Text);
+
+
+                res = valor1 + valor2;
+
+                resultado.Text = Convert.ToString(res);
+
+              
+                
+
+
+                if (res == 0)
+                {
+                    menssagemDeErro.Text = "Erro digite um numero valido";
+
+                }
+
+
+           
+
+
+        }
+
+
+        private void Cancela_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void limpa_Click(object sender, EventArgs e)
+        {
+            pacela1.Text = String.Empty;
+            pacela2.Text = String.Empty;
+            resultado.Text = String.Empty;
+            menssagemDeErro.Text = String.Empty;
+        }
+
+        private void soma_Click(object sender, EventArgs e)
+        {
+
+            valor1 = double.Parse(pacela1.Text);
+   
+            valor2 = double.Parse(pacela2.Text);
+
+            
+            res = valor1 + valor2;
+
+            resultado.Text = Convert.ToString(res);
+
+
+
+            menssagemDeErro.Text = String.Empty;
+
+            if (res == 0)
+            {
+                menssagemDeErro.Text = "Erro digite um numero valido";
+
+
+            }
+
+        }
+
+        private void menor_Click(object sender, EventArgs e)
+        {
+            valor1 = double.Parse(pacela1.Text);
+
+            valor2 = double.Parse(pacela2.Text);
+
+
+            res = valor1 - valor2;
+
+            resultado.Text = Convert.ToString(res);
+        }
+
+        private void mutiplicacao_Click(object sender, EventArgs e)
+        {
+            valor1 = double.Parse(pacela1.Text);
+
+            valor2 = double.Parse(pacela2.Text);
+
+
+            res = valor1 * valor2;
+
+            resultado.Text = Convert.ToString(res);
+        }
+
+        private void divisao_Click(object sender, EventArgs e)
+        {
+
+            valor1 = double.Parse(pacela1.Text);
+
+            valor2 = double.Parse(pacela2.Text);
+
+
+            res = valor1 / valor2;
+
+            resultado.Text = Convert.ToString(res);
+
         }
 
     }
