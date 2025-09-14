@@ -16,7 +16,7 @@ namespace Projetoteste
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MeuPrograma());
+            Application.Run(new TelaInicial());
         }
     }
 }

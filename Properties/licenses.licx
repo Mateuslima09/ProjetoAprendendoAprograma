@@ -1,0 +1,8 @@
+DevExpress.XtraEditors.CheckEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.TextEdit, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraMap.MapControl, DevExpress.XtraMap.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraSpellChecker.SpellChecker, DevExpress.XtraSpellChecker.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraEditors.DXErrorProvider.DXValidationProvider, DevExpress.XtraEditors.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.Utils.Behaviors.BehaviorManager, DevExpress.Utils.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraGauges.Win.GaugeControl, DevExpress.XtraGauges.v24.2.Win, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+DevExpress.XtraGrid.Views.Grid.EditFormUserControl, DevExpress.XtraGrid.v24.2, Version=24.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
